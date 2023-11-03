@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans Mono', 'sans-serif';
+}
+
+:root {
+   --backgroundColorHeroPage1: rgb(47,47,64);
+   --HeadingHeroPage1:rgb(47,47,64);
+   --ParagraphHeroPage1: rgb(47,48,71);
+   --ButtonHoverHeroPage1: rgb(19,93,151);
+   --backgroundColorCenterPage0: rgb(234,234,234);
+   --HeadingCenterPage0: rgb(58,58,58);
+   --ArticleHeadingCenterPage0: rgb(96,96,96);
+   --ArticleParagraphCenterPage0: rgb(84,88,96);
+   --Button1: rgb(2,116,190);
+}
+  
+
+/* NAV */
+nav {
+    display: flex;
+    /* line-height: 1.5; */
+    padding: 1rem;
+    background-color: black;
+}
+
+ /* HEADER */
+.logo {
+    width: 9%;
+    height: 20%;
+}
+
+nav ul {
+    padding-left: 32rem;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 2.4em;
+    padding-top: 2rem;
+}
+
+.home a {
+    color: var(--Button1); 
+}
+
+nav ul li {
+    font-size: clamp(1.0rem, 6vw + 30%, 13px);
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+nav ul li a:hover {
+    color: var(--Button1);
+}
+
+
+/* body, #image-slider, .wrap, .slide-content {
+    overflow-x: hidden;
+} */
+
+.wrap {
+    position: relative
+}
+
+/* This is the image slider CSS */
+#image-slider {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url('./images/image\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide2 {
+    background-image: url('./images/image2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide3 {
+    background-image: url('./images/image3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-content {
+    height: 150vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+
+.Icons {
+    padding-left: 4rem;
+    display: flex;
+}
+
+.user {
+    padding-left: 2rem;
+    color: white;
+}
+
+#cart .fa {
+    color: var(--ButtonHoverHeroPage1E);
+} 
+
+
+
+/* HERO-HOMEPAGE */           
+.title-1 {
+    padding-top: 14rem;
+    text-align: center;
+    left: 50%;   
+    color: var(--HeadingCenterPage0)
+}
+
+.hero-homepage .title-1 span {
+    padding-top: 0;
+    font-family: 'Abril Fatface', 'Poppins';                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    color: var(--HeadingCenterPage0);
+}
+
+.hero-homepage .title-1 p {
+    font-size: clamp(4rem, 5vw + 10%, 12px);
+    color: var(--backgroundColorHeroPage1);
+}
+
+.hero-homepage-article {
+    color: var(--HeadingHeroPage1);
+    padding: 4rem 19rem;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.second-paragraph{ 
+    color: var(--HeadingCenterPage0);
+    font-size: 1.2em;
+    padding: 1rem 19rem;
+    text-align: center;
+    
+}
+
+.hero-homepage-btn {
+    position: absolute;
+    left: 48%;
+    padding: 10px 20px;
+    border-radius: 3rem;
+}
+
+.hero-homepage-btn a {
+    text-decoration: none;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px  30px 0;
+    border-color: transparent black transparent transparent;
+    left: 0; 
+    margin-left: 40px;
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent black;
+    right: 0; 
+    margin-right: 40px;
+}
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+

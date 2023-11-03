@@ -1,25 +1,49 @@
-    var i = 0; //Start Point
-    var images = [];
-    var time = 3000;
+let sliderImages = document.querySelectorAll('.slide'),
+    arrowLeft = document.querySelector('#arrow-left'),
+    arrowRight = document.querySelector('#arrow-right'),
+     current = 0;
 
-    // Image List
-    images[0] = "./images/5-1152x1536.jpg";
-    images[1] = "./images/download-17.jpeg";
-    images[2] = "./images/download-1.jpg";
+    // Clear all images
+function reset() {
+    for(let i = 0; i < sliderImages.length; i++){
+        sliderImages[i].style.display = 'none';
+    }
+}
 
-    // Change Image
-    function changeImg() {
-        document.slide.src = images[i];
+     // Initializes the slider
+    function startSlide() {
+     reset();
+     sliderImages[0].style.display = 'block';
+}
 
-        if(i < images.length - 1) {
-            i++;
-        } else{
-            i = 0; 
-        }
+    // Show prev
+    function slideLeft() {
+     reset();
+     sliderImages[current - 1].style.display = 'block';
+     current--;
+}
 
-        setTimeout("changeImg()", time);
-
-        window.onload = "changeImg"
+    // Show next
+    function slideRight() {
+        reset();
+        sliderImages[current + 1].style.display = 'block';
+        current++;
     }
 
+     // Left arrow click
+    arrowLeft.addEventListener('click', function() {
+        if(current === 0) {
+            current = sliderImages.length;
+        }
+        slideLeft();
+    });
 
+    // Right arrow click
+    arrowRight.addEventListener('click', function() {
+        if(current === sliderImages.length - 1) {
+            current = -1;
+        }
+        slideRight();
+    });
+
+startSlide();
