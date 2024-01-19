@@ -3,107 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+   
     <title>D & D Africana Restaurant- African Food Website</title>
     <meta name="title" content="D & D Africana Restaurant- African Food Website">
     <meta name="description" content="This is a Restaurant html template made by Daniel">
-
+  
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/cropped-WhatsApp_Image_2023-06-13_at_10.28.03_PM-removebg-preview-180x180.png" type="image/x-icon">
 
-</head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+       
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head >
+
+
 <body>
-    <nav class="navbar">
-        <img class="logo" src="./images/cropped-cropped-PHOTO-2023-06-11-22-23-13-300x220.jpg" alt="">
 
-        <!-- REMEMBER TO PUT THE LINKS IN EACH A '#' TAG  -->
-        <ul class="nav">
-          <li class="home"><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Track Order</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        
-          <div class="Icons">
-            <li id="cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-            <li class="user"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-          </div>
-        </ul>
-    </nav>
+  <!--
+     HEADER
+     -->
 
-    <!-- HERO-HOMEPAGE -->
-    <div class="hero-homepage">
-      
-      <div class="wrap">
-        <div id= "arrow-left" class="arrow"></div>
-        <div id="image-slider">   
-          <div class="slide1">
-            <div class="slide-content">
-              <span>
-                <h1 class="title-1">
-                  <span>Best in Winnipeg, Manitoba</span> 
-                   <p>D&D Afrikana<br> Restaurant</p>
-                 </h1> 
-           
-                   <!-- HOMEPAGE-ARTICLE -->
-                 <p class="hero-homepage-article">
-                   Welcome to D&D Afrikana Restaurant, a culinary destination dedicated to creating exceptional dining and take out experiences. Nestled in the heart of Winnipeg, our restaurant combines exquisite flavors, warm hospitality, and a vibrant atmosphere to provide an unforgettable journey for your taste buds.<br>
-                   <div class="second-paragraph">At D&D Afrikana Restaurant, we believe in the power of food to bring people together. Our talented team of chefs meticulously crafts each dish, drawing inspiration from both local traditions and global culinary trends. Using only the finest, locally sourced ingredients, we strive to create flavors that excite and delight.</div>
-                 </p>
-                                                                                                                                                                                                                   
-                <button class="hero-homepage-btn"><a href="#">Explore Menu</a></button>
-              </span>
-            </div>
-          </div>
+  <header class="header " data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./images/cropped-cropped-PHOTO-2023-06-11-22-23-13-300x220.jpg" alt="D&D Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close-menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./images/cropped-cropped-PHOTO-2023-06-11-22-23-13-300x220.jpg" alt="D&D Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="seperator"></div>
+              
+             <span class="span">Home</span>
+            </a>
+          </li>
   
-          <div class="slide2">
-            <div class="slide-content">
-              <span> 
-                <h1 class="title-1">
-                  <span>Best in Winnipeg, Manitoba</span> 
-                  <p>D&D Afrikana<br> Restaurant</p>
-                </h1>
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline active">
+              <div class="seperator"></div>
+              
+             <span class="span">Menus</span>
+            </a>
+          </li>
+  
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline active">
+              <div class="seperator"></div>
+              
+             <span class="span">About Us</span>
+            </a>
+          </li>
+  
+          <li class="navbar-item">
+            <a href="#track" class="navbar-link hover-underline active">
+              <div class="seperator"></div>
             
-                  <!-- HOMEPAGE-ARTICLE -->
-                <p class="hero-homepage-article">
-                   Welcome to D&D Afrikana Restaurant, a culinary destination dedicated to creating exceptional dining and take out experiences. Nestled in the heart of Winnipeg, our restaurant combines exquisite flavors, warm hospitality, and a vibrant atmosphere to provide an unforgettable journey for your taste buds.<br>
-                  <div class="second-paragraph">At D&D Afrikana Restaurant, we believe in the power of food to bring people together. Our talented team of chefs meticulously crafts each dish, drawing inspiration from both local traditions and global culinary trends. Using only the finest, locally sourced ingredients, we strive to create flavors that excite and delight.</div>
-                </p>
-                                                                                                                                                                                                                   
-                <button class="hero-homepage-btn"><a href="#">Explore Menu</a></button>
-              </span>
-            </div>
+             <span class="span">Track Order</span>
+            </a>
+          </li>
+  
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline active">
+              <div class="seperator"></div>
+            
+             <span class="span">Contact Us</span>
+            </a>
+          </li>
+        
+  
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+    
+          <address class="body-4">
+            789 Ellice Avenue, <br>
+            Winnipeg, Manitoba
+          </address>
+    
+          <p class="body-4 navbar-text">Opens: 11:00am - 10:00pm</p>
+    
+          <a href="mailto:booking@ddafrikanarestaurant.com" class="sidebar-link">ddafrikanarestaurant.com</a>
+    
+          <p class="contact-label">Booking  Request</p>
+    
+          <a href="tel: +12047755555" class="body-1 contact-number hover-underline">
+            +1204-775-5555
+          </a>
+    
          </div>
-             
-         <div class="slide3">
-           <div class="slide-content">
-             <span> 
-              <h1 class="title-1">
-               <span>Best in Winnipeg, Manitoba</span> 
-               <p>D&D Afrikana<br> Restaurant</p>
-              </h1>
-         
-             <!-- HOMEPAGE-ARTICLE -->
-             <p class="hero-homepage-article">
-               Welcome to D&D Afrikana Restaurant, a culinary destination dedicated to creating exceptional dining and take out experiences. Nestled in the heart of Winnipeg, our restaurant combines exquisite flavors, warm hospitality, and a vibrant atmosphere to provide an unforgettable journey for your taste buds. <br>
-               <div class="second-paragraph">At D&D Afrikana Restaurant, we believe in the power of food to bring people together. Our talented team of chefs meticulously crafts each dish, drawing inspiration from both local traditions and global culinary trends. Using only the finest, locally sourced ingredients, we strive to create flavors that excite and delight.</div>
-             </p>
-   
-             <button class="hero-homepage-btn"><a href="#">Explore Menu</a></button></span>
-           </div>
-         </div>
-        </div>
-        <div id="arrow-right" class="arrow"></div>
-      </div>   
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Find a Table</span>
+
+        <span class="text text-2" aria-hidden="true" >Find a Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
     </div>
 
+  </header>
 
 
+   <!-- HERO- HOMEPAGE -->
+     <div class="slider">       
+        <div class="slide current">
+          <div class="content">                 
+              <img src="./images/divider-free-img-1.png" alt="" class="divider">
+             <h1 class="title-1">
+                <span>Best in Winnipeg, Manitoba</span> 
+                <p>D&D Afrikana<br> Restaurant</p>
+             </h1> 
+           
+              <p class="homepage-article">
+                Welcome to D&D Afrikana Restaurant, a culinary destination dedicated to creating exceptional dining and take out experiences. Nestled in the heart of Winnipeg, our restaurant combines exquisite flavors, warm hospitality, and a vibrant atmosphere to provide an unforgettable journey for your taste buds.<br>
+                <div class="second-paragraph">At D&D Afrikana Restaurant, we believe in the power of food to bring people together. Our talented team of chefs meticulously crafts each dish, drawing inspiration from both local traditions and global culinary trends. Using only the finest, locally sourced ingredients, we strive to create flavors that excite and delight.</div>
+              </p>     
+                            
+          </div>         
+        </div>
+        <div class="slide">
+          <div class="content"> 
+            <img src="./images/divider-free-img-1.png" alt="" class="divider">                 
+             <h1 class="title-1">
+                <span>Best in Winnipeg, Manitoba</span> 
+                <p>D&D Afrikana<br> Restaurant</p>
+             </h1> 
+           
+              <p class="homepage-article">
+                Welcome to D&D Afrikana Restaurant, a culinary destination dedicated to creating exceptional dining and take out experiences. Nestled in the heart of Winnipeg, our restaurant combines exquisite flavors, warm hospitality, and a vibrant atmosphere to provide an unforgettable journey for your taste buds.<br>
+                <div class="second-paragraph">At D&D Afrikana Restaurant, we believe in the power of food to bring people together. Our talented team of chefs meticulously crafts each dish, drawing inspiration from both local traditions and global culinary trends. Using only the finest, locally sourced ingredients, we strive to create flavors that excite and delight.</div>
+              </p>   
+
+          </div>
+                 
+        </div>
+        <div class="slide ">
+          <div class="content"> 
+            <img src="./images/divider-free-img-1.png" alt="" class="divider">                   
+             <h1 class="title-1">
+                <span>Best in Winnipeg, Manitoba</span> 
+                <p>D&D Afrikana<br> Restaurant</p>
+             </h1> 
+           
+              <p class="homepage-article">
+                Welcome to D&D Afrikana Restaurant, a culinary destination dedicated to creating exceptional dining and take out experiences. Nestled in the heart of Winnipeg, our restaurant combines exquisite flavors, warm hospitality, and a vibrant atmosphere to provide an unforgettable journey for your taste buds.<br>
+                <div class="second-paragraph">At D&D Afrikana Restaurant, we believe in the power of food to bring people together. Our talented team of chefs meticulously crafts each dish, drawing inspiration from both local traditions and global culinary trends. Using only the finest, locally sourced ingredients, we strive to create flavors that excite and delight.</div>
+              </p>  
+                                                                                                                                                                                                                                  
+          </div>   
+         
+        </div>
+        <div class="slide ">
+          <div class="content"> 
+            <img src="./images/divider-free-img-1.png" alt="" class="divider">                      
+             <h1 class="title-1">
+                <span>Best in Winnipeg, Manitoba</span> 
+                <p>D&D Afrikana<br> Restaurant</p>
+             </h1> 
+           
+              <p class="homepage-article">
+                Welcome to D&D Afrikana Restaurant, a culinary destination dedicated to creating exceptional dining and take out experiences. Nestled in the heart of Winnipeg, our restaurant combines exquisite flavors, warm hospitality, and a vibrant atmosphere to provide an unforgettable journey for your taste buds.<br>
+                <div class="second-paragraph">At D&D Afrikana Restaurant, we believe in the power of food to bring people together. Our talented team of chefs meticulously crafts each dish, drawing inspiration from both local traditions and global culinary trends. Using only the finest, locally sourced ingredients, we strive to create flavors that excite and delight.</div>
+              </p>
+                  
+                                
+          </div>         
+        </div>
+       
+      </div>
+      <div class="buttons">
+        <button id="prev"><i class="fas fa-arrow-left"></i></button>
+        <button id="next"><i class="fas fa-arrow-right"></i></button>
+      </div>
+
+      <div class="explore">
+        <a href="#" class="menu-btn">Explore Menu</a>  
+      </div> 
+
+
+    <!-- SERVICE -->
     
+    <section class="section service bg-black-10 text-center" aria-label="service">
+      <div class="container">
+
+        <p class="section-subtitle label-2">Flavors For all Nigeria and Winnipeg</p>
+
+        <h2 class="headline-1 section-title"> We Offer Top Notch</h2>
+        
+        <p class="section-text">
+        Local and foreign people alike can come and enjoy our African delicacy and West African nourishment. Ordering our food is sure to give you a Delightful experience.
+        </p>
+
+        <ul class="grid-list">
+
+          <li>
+            <div class="service-card">
+
+              <a href="#" class="has-before hover:shine">
+                <figure class="card-holder img-holder" style="--width:285 ; --height:336 ;">
+                  <img src="./images/spagetti-1-300x300.jpg" width="285" height="336" loading="lazy" alt="Breakfast" class="img-cover">
+                </figure>
+              </a>   
+
+              <div class="card-content">
+
+                    <!-- REMEMBER TO ADD LINKS TO THE Anchor<a></a> tags -->
+                <h3 class="title-4 card-title">
+                  <a href="#">Breakfast</a>
+                </h3>
+
+                <a href="#" class="btn-text hover-underline label-2">View-Menu</a>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <a href="#" class="has-before hover:shine">
+                <figure class="card-holder img-holder" style="--width:285 ; --height:336 ;">
+                  <img src="/images/grilled-chicken-suya-300x300.jpg" width="285" height="336" loading="lazy" alt="Appetizers" class="img-cover">
+                </figure>
+              </a>   
+
+              <div class="card-content">
+
+                    <!-- REMEMBER TO ADD LINKS TO THE Anchor<a></a> tags -->
+                <h3 class="title-4 card-title">
+                  <a href="#">Appetizers</a>
+                </h3>
+
+                <a href="#" class="btn-text hover-underline label-2">View-Menu</a>
+
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="service-card">
+
+              <a href="#" class="has-before hover:shine">
+                <figure class="card-holder img-holder" style="--width:285 ; --height:336 ;">
+                  <img src="/images/Zobo-drink-Photo-Legit-Ng-300x300.png" width="285" height="336" loading="lazy" alt="Drinks" class="img-cover">
+                </figure>
+              </a>   
+
+              <div class="card-content">
+
+                    <!-- REMEMBER TO ADD LINKS TO THE Anchor<a></a> tags -->
+                <h3 class="title-4 card-title">
+                  <a href="#">Drinks</a>
+                </h3>
+
+                <a href="#" class="btn-text hover-underline label-2">View-Menu</a>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <img src="/images/shape-1.png" width="246" height="412" loading="lazy" 
+        alt="shape"
+         class="shape shape-1 move-anim">
+        <img src="/images/shape-2.png" width="246" height="345" loading="lazy" 
+        alt="shape"
+         class="shape shape-2 move-anim">
+      </div>
+    </section>
+
    <!-- STORY-PAGE -->
-   <!-- <div class="story-page">
+    <!-- <div class="story-page">
     <h2 class="title-2">D&D Africana Restaurant</h2>
 
     <div class="story-page-article">
@@ -114,21 +307,22 @@
 
         <section>Founded by a family of seasoned chefs and hospitality enthusiasts, D&D Afrikana Restaurant was born out of a desire to showcase the rich tapestry of flavors from Africa while celebrating the unique local ingredients available to us. We embarked on a mission to craft a menu that marries African tradition and innovation, delivering dishes that ignite the senses and leave a lasting impression.</section>
       </p>
-    </div> -->
+    </div>  -->
 
-   <!-- MENU-PAGE -->
-    <!-- <div class="Menu-Page">
+ 
+
+<!--     
+   MENU-PAGE 
+    <div class="Menu-Page">
      <div class="image-flex">
       <img src="" alt="">
       <img src="" alt="">
       <img src="" alt="">
      </div>
     </div>
-   </div> -->
-
-
-    
-    <script src="hero-homepage.js"></script>
+   </div> 
+     -->
+     <script src="homepage.js"></script>
     
 </body>
 </html>
